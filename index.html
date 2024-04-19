@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отель "Солнечный берег" - Бронирование</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <h1>Отель "Солнечный берег" - Бронирование</h1>
+</header>
+<main>
+    <h2>Описание отеля</h2>
+    <p>Отель "Солнечный берег" расположен на прекрасном побережье, где каждый гость может насладиться теплым морем и уютной атмосферой. Номера отеля оснащены всем необходимым для комфортного проживания. У нас вы найдете роскошные номера с видом на море, а также отличный сервис и много других преимуществ.</p>
+    
+    <h2>Забронировать номер</h2>
+    <form>
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="check-in">Дата заезда:</label><br>
+        <input type="date" id="check-in" name="check-in" required><br>
+        <label for="check-out">Дата отъезда:</label><br>
+        <input type="date" id="check-out" name="check-out" required><br>
+        <button type="submit" onclick="bookRoom()">Забронировать</button>
+    </form>
+    
+    <div id="booking-status"></div>
+    
+    <h2>Галерея фотографий</h2>
+    <div class="gallery">
+        <div class="photo">
+            <img src="SV.jpg" alt="Отель фото 1">
+            <div class="caption">Прекрасный вид на море</div>
+        </div>
+        <div class="photo">
+            <img src="hotel.jpg" alt="Отель фото 2">
+            <div class="caption">Уютные номера с балконами</div>
+        </div>
+        <div class="photo">
+            <img src="pool.jpg" alt="Отель фото 3">
+            <div class="caption">Бассейн с шезлонгами</div>
+        </div>
+    </div>
+</main>
+
+<script>
+    function bookRoom() {
+        // Логика бронирования номера
+    }
+</script>
+</body>
+</html>
